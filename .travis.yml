@@ -1,0 +1,5 @@
+language: node_js
+node_js: 16
+script:
+        - timeout 5m npm run compile
+        - timeout 5m npm test 
