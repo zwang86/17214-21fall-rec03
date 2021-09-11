@@ -1,5 +1,7 @@
 package edu.cmu.cs.cs214.rec02;
 
+import java.util.Arrays;
+
 /**
  * A resizable-array implementation of the {@link IntQueue} interface. The head of
  * the queue starts out at the head of the array, allowing the queue to grow and
@@ -9,13 +11,14 @@ package edu.cmu.cs.cs214.rec02;
  * source of the bugs and correct them!
  *
  * @author Alex Lockwood
+ * @author Ye Lu
  */
 public class ArrayIntQueue implements IntQueue {
 
     /**
      * An array holding this queue's data
      */
-    private int elementData[];
+    private int[] elementData;
 
     /**
      * Index of the next dequeue-able value
@@ -43,9 +46,7 @@ public class ArrayIntQueue implements IntQueue {
 
     /** {@inheritDoc} */
     public void clear() {
-        for (int i = 0; i < elementData.length; i++) {
-            elementData[i] = 0;
-        }
+        Arrays.fill(elementData, 0);
         size = 0;
         head = 0;
     }
