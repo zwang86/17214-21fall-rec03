@@ -8,6 +8,10 @@ Note how _Jest_ is set up in `package.json`: It adds development dependencies fo
 
 Also in `.travis.yml` there is now an extra step to execute the tests.
 
+Finally `jest.config.js` indicates to _Jest_ where to find the tests.
+
+----
+
 You will likely want to explore IDE integration for test execution and coverage in your IDE, but also ensure that tests still execute with *npm* in a Continuous Integration environment (e.g. Travis-CI).
 
 The following commands might be useful:

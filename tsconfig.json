@@ -6,6 +6,7 @@
       "strict": true,
       "esModuleInterop": true,
       "moduleResolution": "node",
-      "outDir": "dist"
+      "outDir": "dist",
+      "allowJs": true
     }
   }
