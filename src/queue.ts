@@ -43,7 +43,7 @@ interface IntQueue {
      * @return The element at the head of the queue. Returns null if queue
      *         is empty.
      */
-  peek: () => number
+  peek: () => number | null
 
   /**
      * Determine the number of elements in the queue.

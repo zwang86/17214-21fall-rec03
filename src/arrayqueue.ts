@@ -97,7 +97,7 @@ function newArrayIntQueue (): IntQueue {
       return size >= 0
     },
 
-    peek: function (): number {
+    peek: function (): number | null {
       return elementData[head]
     },
 
