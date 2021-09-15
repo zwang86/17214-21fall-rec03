@@ -7,7 +7,7 @@ let createQueue = newArrayIntQueue
 
 // simple test
 test("newly created list should be empty", () => {
-    expect(createQueue().isEmpty).toBeTruthy()
+    expect(createQueue().isEmpty()).toBeTruthy()
 })
 
 let param = [5, 10, 1000000]
