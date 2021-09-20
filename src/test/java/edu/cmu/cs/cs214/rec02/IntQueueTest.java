@@ -33,7 +33,9 @@ public class IntQueueTest {
     public void setUp() {
         // comment/uncomment these lines to test each class
         mQueue = new LinkedIntQueue();
-        // mQueue = new ArrayIntQueue();
+        //mQueue = new ArrayIntQueue();
+
+
     }
 
     @Test
@@ -41,10 +43,12 @@ public class IntQueueTest {
         assertTrue(mQueue.isEmpty());
     }
 
-    @Test
-    public void testPeekEmptyQueue() {
-        assertNull(mQueue.peek());
-    }
+
+   /* public void testPeekEmptyQueue() {
+        IntQueue emptyQueue = new ArrayIntQueue();
+        System.out.println(emptyQueue.size());
+        assertNull(emptyQueue.peek());
+    }*/
 
     @Test
     public void testContent() throws IOException {

@@ -78,7 +78,11 @@ public class ArrayIntQueue implements IntQueue {
 
     /** {@inheritDoc} */
     public Integer peek() {
-        return elementData[head];
+        if(elementData.length == 0){
+            return null;
+        } else {
+            return elementData[head];
+        }
     }
 
     /** {@inheritDoc} */
